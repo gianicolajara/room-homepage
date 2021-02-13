@@ -8,7 +8,7 @@ const d = document;
 export const menuCollapse = (hamburguerIcon, context, iconClose) => {
   const $hamburguerIcon = d.querySelector(hamburguerIcon),
     $context = d.querySelector(context),
-    $iconClose = d.querySelector(iconClose);
+    $iconClose = iconClose;
 
   //Dark screen
 
@@ -22,15 +22,22 @@ export const menuCollapse = (hamburguerIcon, context, iconClose) => {
 */
 const handleCollapse = ($hamburguerIcon, $context, $iconClose, $darkScreen) => {
   d.addEventListener("click", (e) => {
-    if (e.target === $hamburguerIcon || e.target === $iconClose) {
+    if (
+      e.target === $hamburguerIcon ||
+      e.target.matches(`${$iconClose} *`) ||
+      e.target.matches($iconClose)
+    ) {
       //Toggle list menu
       $context.classList.toggle("show");
 
       //Toggle Dark screen
       $darkScreen.classList.toggle("d-none");
 
-      //toggle scroll in body
+      //Toggle scroll in body
       d.body.classList.toggle("no-scroll");
+
+      //Toggle icon Close
+      d.querySelector($iconClose).classList.toggle("visibility");
     }
   });
 };
