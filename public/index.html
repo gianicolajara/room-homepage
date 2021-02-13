@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Menu -->
+    <header class="main-header">
+      <nav class="menu">
+        <h2 class="menu__brand">room</h2>
+        <div class="dark-screen d-none"></div>
+        <ul class="menu__list">
+          <div class="menu__container">
+            <img
+              src="./assets/images/icon-close.svg"
+              alt="close icon"
+              class="icon-close"
+            />
+          </div>
+          <div class="menu__container">
+            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contact</a>
+            </li>
+          </div>
+        </ul>
+        <img
+          src="./assets/images/icon-hamburger.svg"
+          alt="hamburguer icon"
+          class="hamburger-icon"
+        />
+      </nav>
+    </header>
+    <!-- /Menu -->
+    <main>
+      <!-- Heroe -->
+      <section class="heroe">
+        <div class="heroe__images">
+          <img src="" alt="heroe shirts" />
+          <img src="" alt="heroe shirts" />
+          <img src="" alt="heroe shirts" />
+        </div>
+        <div class="heroe__arrows heroe__arrows--mobile">
+          <div class="heroe__arrow arrow-left">
+            <img
+              src="./assets/images/icon-angle-left.svg"
+              alt="icon left arrow"
+              class="arrow-heroe"
+            />
+          </div>
+          <div class="heroe__arrow arrow-right">
+            <img
+              src="./assets/images/icon-angle-right.svg"
+              alt="icon right arrow"
+              class="arrow-heroe"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- /Heroe -->
+      <!-- Section shop now -->
+      <section class="shop">
+        <div class="wrapper">
+          <article class="shop-info">
+            <header class="shop-info__header">
+              <h1 class="title title--unseparate">
+                Discover innovative ways to decorate
+              </h1>
+            </header>
+            <div class="shop-info__body">
+              <p class="paragraph paragraph--gray paragraph--separate">
+                We provide unmatched quality, comfort, and style for property
+                owners across the country. Our experts combine form and function
+                in bringing your vision to life. Create a room in your own style
+                with our collection and make your property a reflection of you
+                and what you love.
+              </p>
+              <a href="#" class="link link--separate"
+                >SHOP NOW
+                <span
+                  ><svg
+                    width="40"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="link__arrow"
+                  >
+                    <path
+                      d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                      fill-rule="nonzero"
+                    /></svg></span
+              ></a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- /Section shop now -->
+      <!-- Section about us -->
+      <section class="about">
+        <article class="about-info">
+          <header class="about-info__header">
+            <img src="./assets/images/image-about-dark.jpg" alt="" />
+          </header>
+          <div class="about-info__body">
+            <div class="heroe__arrows heroe__arrows--desktop">
+              <div class="heroe__arrow arrow-left">
+                <img
+                  src="./assets/images/icon-angle-left.svg"
+                  alt="icon left arrow"
+                  class="arrow-heroe"
+                />
+              </div>
+              <div class="heroe__arrow arrow-right">
+                <img
+                  src="./assets/images/icon-angle-right.svg"
+                  alt="icon right arrow"
+                  class="arrow-heroe"
+                />
+              </div>
+            </div>
+            <div class="wrapper">
+              <h2 class="title title--uppercase title--mini title--separate">
+                About our furniture
+              </h2>
+              <p class="paragraph paragraph--gray paragraph--separate">
+                Our multifunctional collection blends design and function to
+                suit your individual taste. Make each room unique, or pick a
+                cohesive theme that best express your interests and what
+                inspires you. Find the furniture pieces you need, from
+                traditional to contemporary styles or anything in between.
+                Product specialists are available to help you create your dream
+                space.
+              </p>
+            </div>
+          </div>
+          <footer class="about-info__footer">
+            <img src="./assets/images/image-about-light.jpg" alt="" />
+          </footer>
+        </article>
+      </section>
+      <!-- /Section about us -->
+    </main>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
